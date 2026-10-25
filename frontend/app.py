@@ -18,7 +18,7 @@ st.write(
 st.sidebar.header("Network Settings")
 use_public_url = st.sidebar.checkbox("Use Public Codespaces URL fallback", value=False)
 if use_public_url:
-    custom_backend_url = st.sidebar.text_input("Public Backend URL", "https://upgraded-space-fortnight-q7r97xqg496pc44q6-7860.app.github.dev")
+    custom_backend_url = st.sidebar.text_input("Public Backend URL", "https://laughing-space-pancake-696r9pg75rjjc5jr6-7860.app.github.dev")
     BACKEND_URL = custom_backend_url.rstrip("/")
 else:
     st.sidebar.info("Currently attempting internal Docker network connection to backend host: http://backend:7860")
